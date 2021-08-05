@@ -1,0 +1,78 @@
+body {
+  color: white;
+  font-family: "New Tegomin", serif;
+}
+.navbar-toggler {
+  margin: 0 auto;
+}
+.bg-dark {
+  background-color: black !important;
+}
+h2 {
+  text-align: center;
+  padding-bottom: 0px;
+  margin: 0px;
+}
+.navbar-brand {
+  color: white;
+}
+.navbar-brand:hover {
+  color: gray;
+}
+#pin-input {
+  border-left: 100px;
+}
+.mr-sm-2 {
+  margin-right: 10px;
+  margin-left: 12px;
+}
+.d-flex {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.button1 {
+  border: 3px solid white;
+  border-radius: 4px;
+}
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid white;
+  padding: 20px;
+  background: linear-gradient(black, #111);
+}
+td {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  border: 1px solid white;
+}
+th {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  border: 1px solid white;
+}
+tr {
+  border: 1px solid white !important;
+}
+#day {
+  border-radius: 4px;
+  font-size: smaller;
+  border: 1px solid white;
+}
+#mt {
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .d-flex {
+    width: 90%;
+  }
+}
+span {
+  margin-left: 10px;
+  margin-right: 10px;
+}
