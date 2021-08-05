@@ -32,6 +32,10 @@ function fn1(){
     req.onload = function () {
         console.log("DONE LOADING!!");
         const txt = JSON.parse(this.responseText);
+        if(txt.centers==undefined){
+            div.innerHTML="<p>No information is provided for this center. Visit the center or check <a href='htpps://www.cowin.gov.in/'>Cowin Website</a> for more information.</p>";
+            return;
+        }
         let obj=txt.centers.sessions[0];
         var thead=document.getElementById('thead');
         var tbody = document.getElementById('tbody');
