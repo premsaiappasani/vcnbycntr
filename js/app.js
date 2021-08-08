@@ -24,12 +24,14 @@ btn.addEventListener("click",function(){
     fn1();
 });
 function fn1(){
+    document.getElementById("load").className="spinner-grow";
     let pincode=document.getElementById("pin-input").value;
     let today=document.getElementById("day").value;
     let date = today[8]+today[9]+today[7]+today[5]+today[6]+today[4]+today[0]+today[1]+today[2]+today[3];
     console.log(date);
     const req = new XMLHttpRequest();
     req.onload = function () {
+        document.getElementById("load").className="no";
         console.log("DONE LOADING!!");
         const txt = JSON.parse(this.responseText);
         let obj={};
