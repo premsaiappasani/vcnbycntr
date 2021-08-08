@@ -62,6 +62,7 @@ function fn1(){
         }
     };
     req.onerror = function () {
+        document.getElementById("load").className="no";
         console.log("ERROR");
         console.log(this);
     };
